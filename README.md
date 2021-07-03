@@ -1,17 +1,11 @@
 # Review-Validator
-The aim of this project is to classify the reviews into good or bad. Mainly focused on restaurant reviews. 
-The major steps include scraping data and predicting positivity in them using NLP and Machine learning algorithms.
+This Project is Mainly focused on classifying the restaurent reviews into good and bad. The Steps involved here are
+1) Scraping reviews of a restaurent.
+2) Classifying them using NLP.
 
-First folder i.e base_scraping consists of 2 files scrape_nlp.py and reviews.csv. scrape_nlp.py contains the python code to extract the reviews of a particular hotel from the website(https://www.tripadvisor.in/).
-For ex:(https://www.tripadvisor.in/Restaurant_Review-g297588-d12212099-Reviews-Cascades-Visakhapatnam_Visakhapatnam_District_Andhra_Pradesh.html). The other csv file contains reviews scraped from the website.
+Step 1:Folder base scraping consists of a scrape_nlp.py which scrapes data using BeautifulSoup from the website tripadvisor(https://www.tripadvisor.in/) This file takes any restaurent link from tripadvisor (like https://www.tripadvisor.in/Restaurant_Review-g297588-d12212099-Reviews-Cascades-Visakhapatnam_Visakhapatnam_District_Andhra_Pradesh.html) and scrapes the reviews and stores them in a csv file like reviews.csv The second folder is for scraping the reviews on well known google maps page. The file infinite_scroll.py takes input link of any restaurent from google maps. As google reviews are loaded while scrolling as AJAX (Asynchronous Javascript and XML)is used while writing the code we need selenium library and webdriver for scrolling and while scrolling we scrape the data and save it into a csv file like fresh_stocks.csv.
 
-The second folder i.e Scrape_selenium consists of 3 files infinite_reviews.py which consists of python code where Selenium library is used, Since google reviews are loaded as we
-scroll down (using Jquery) so we have to use selenium functions to scroll the data using css selector. Note:the code does not work without chromedriver.exe file in the base folder 
-where you are executing py file.The other csv file consists of all the reviews.
-
-
-Now we have to use the reviews from either of the methods and process them using final.ipynb file. 
-
+Step 2: Here we use Bag of words model to process the words of reviews(stemming,removing stop words,etc) of both input and scraped datasets and then we create the bag of words model.Then we train the dataset using any classification model Here we used Kernel SVM.After training we predict the result for previously scraped review set and calculate the positivity percentage. Here we got 59.2%.
 
 
 

@@ -1,5 +1,6 @@
 # Review-Validator
 The aim of this project is to classify the reviews into good or bad. Mainly focused on restaurant reviews. 
+The major steps include scraping data and predicting positivity in them using NLP and Machine learning algorithms.
 
 First folder i.e base_scraping consists of 2 files scrape_nlp.py and reviews.csv. scrape_nlp.py contains the python code to extract the reviews of a particular hotel from the website(https://www.tripadvisor.in/).
 For ex:(https://www.tripadvisor.in/Restaurant_Review-g297588-d12212099-Reviews-Cascades-Visakhapatnam_Visakhapatnam_District_Andhra_Pradesh.html). The other csv file contains reviews scraped from the website.
@@ -9,7 +10,8 @@ scroll down (using Jquery) so we have to use selenium functions to scroll the da
 where you are executing py file.The other csv file consists of all the reviews.
 
 
-Now we have to use the reviews from either of the methods and process them using final.ipynb
+Now we have to use the reviews from either of the methods and process them using final.ipynb file. 
+
 
 
 

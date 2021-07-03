@@ -9,7 +9,7 @@ scroll down (using Jquery) so we have to use selenium functions to scroll the da
 where you are executing py file.The other csv file consists of all the reviews.
 
 
-Now we have to use the reviews from either of the methods and process them using final.ipnb
+Now we have to use the reviews from either of the methods and process them using final.ipynb
 
 
 
